@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГосУслуги | Все услуги</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка (такая же как в index.html) -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="material-icons-round">verified</i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>ГосУслуги</h1>
+                        <p>Официальный портал</p>
+                    </div>
+                </a>
+                
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-link">
+                        <i class="material-icons-round">home</i>
+                        <span>Главная</span>
+                    </a>
+                    <a href="services.html" class="nav-link active">
+                        <i class="material-icons-round">apps</i>
+                        <span>Услуги</span>
+                    </a>
+                    <a href="applications.html" class="nav-link">
+                        <i class="material-icons-round">description</i>
+                        <span>Заявления</span>
+                    </a>
+                    <a href="news.html" class="nav-link">
+                        <i class="material-icons-round">newspaper</i>
+                        <span>Новости</span>
+                    </a>
+                </nav>
+                
+                <div class="user-actions">
+                    <button class="btn-notification" id="notificationBtn">
+                        <i class="material-icons-round">notifications</i>
+                        <span class="notification-badge">2</span>
+                    </button>
+                    <a href="profile.html" class="btn-profile">
+                        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=ГосУслуги" alt="Профиль">
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="material-icons-round">menu</i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+        <!-- Такое же как в index.html -->
+    </div>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <div class="container">
+            <!-- Хлебные крошки -->
+            <nav class="breadcrumbs">
+                <a href="index.html">Главная</a>
+                <i class="material-icons-round">chevron_right</i>
+                <span>Услуги</span>
+            </nav>
+
+            <!-- Заголовок -->
+            <div class="page-header">
+                <h1>Все государственные услуги</h1>
+                <p>Выберите нужную услугу или воспользуйтесь поиском</p>
+            </div>
+
+            <!-- Поиск -->
+            <div class="search-section">
+                <div class="search-box">
+                    <i class="material-icons-round">search</i>
+                    <input type="text" placeholder="Найти услугу..." id="serviceSearch">
+                    <button class="search-btn">Найти</button>
+                </div>
+                <div class="search-filters">
+                    <button class="filter-btn active">Все</button>
+                    <button class="filter-btn">Популярные</button>
+                    <button class="filter-btn">Новые</button>
+                    <button class="filter-btn">Электронные</button>
+                </div>
+            </div>
+
+            <!-- Категории услуг -->
+            <section class="categories-section">
+                <h2>Категории</h2>
+                <div class="categories-grid">
+                    <a href="#passport" class="category-card">
+                        <div class="category-icon">
+                            <i class="material-icons-round">badge</i>
+                        </div>
+                        <h3>Паспорта и документы</h3>
+                        <p>12 услуг</p>
+                    </a>
+                    
+                    <a href="#tax" class="category-card">
+                        <div class="category-icon">
+                            <i class="material-icons-round">receipt</i>
+                        </div>
+                        <h3>Налоги и финансы</h3>
+                        <p>8 услуг</p>
+                    </a>
+                    
+                    <a href="#health" class="category-card">
+                        <div class="category-icon">
+                            <i class="material-icons-round">health_and_safety</i>
+                        </div>
+                        <h3>Здравоохранение</h3>
+                        <p>15 услуг</p>
+                    </a>
+                    
+                    <a href="#property" class="category-card">
+                        <div class="category-icon">
+                            <i class="material-icons-round">home</i>
+                        </div>
+                        <h3>Недвижимость</h3>
+                        <p>10 услуг</p>
+                    </a>
+                    
+                    <a href="#transport" class="category-card">
+                        <div class="category-icon">
+                            <i class="material-icons-round">directions_car</i>
+                        </div>
+                        <h3>Транспорт</h3>
+                        <p>7 услуг</p>
+                    </a>
+                    
+                    <a href="#family" class="category-card">
+                        <div class="category-icon">
+                            <i class="material-icons-round">family_restroom</i>
+                        </div>
+                        <h3>Семья и дети</h3>
+                        <p>9 услуг</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Список услуг -->
+            <section class="services-list-section" id="servicesList">
+                <h2>Все услуги</h2>
+                
+                <div class="service-item" id="passport">
+                    <div class="service-item-header">
+                        <div class="service-item-icon">
+                            <i class="material-icons-round">badge</i>
+                        </div>
+                        <div>
+                            <h3>Загранпаспорт нового образца</h3>
+                            <div class="service-tags">
+                                <span class="service-tag popular">Популярная</span>
+                                <span class="service-tag online">Онлайн</span>
+                                <span class="service-tag time">14 дней</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="service-description">Оформление биометрического заграничного паспорта сроком на 10 лет. Требуется личное присутствие для сдачи отпечатков пальцев.</p>
+                    <div class="service-actions">
+                        <button class="btn-primary btn-sm">Подать заявление</button>
+                        <button class="btn-outline btn-sm">Подробнее</button>
+                    </div>
+                </div>
+                
+                <!-- Другие услуги... -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал (такой же как в index.html) -->
+    <footer class="footer">
+        <!-- Содержимое такое же как в index.html -->
+    </footer>
+
+    <!-- Модальные окна (такие же как в index.html) -->
+
+    <script src="script.js"></script>
+    <script src="services-script.js"></script>
+</body>
+</html>
